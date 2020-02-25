@@ -17,7 +17,11 @@
     "autoload":{
       "psr-4":{
         "GPBMetadata\\":"src/xiaoyingdeng/GPBMetadata/",
-        "User\\":"src/xiaoyingdeng/User/"
+        "User\\":"src/xiaoyingdeng/User/",
+        "Customer\\":"src/xiaoyingdeng/Customer/",
+        "Points\\":"src/xiaoyingdeng/Points/",
+        "Promocode\\":"src/xiaoyingdeng/Promocode/",
+        "Salesman\\":"src/xiaoyingdeng/Salesman/"
       }
     }
 }
