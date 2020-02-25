@@ -1,0 +1,23 @@
+{
+    "name": "xiaoyingdeng/rpccli",
+    "description": "php grpc client",
+    "repositories":[
+        {
+            "type":"vcs",
+            "url":"https://github.com/livelu/rpc-cli.git"
+        }
+    ],
+    "require": {
+        "xiaoyingdeng/rpccli": "dev-master",
+        "grpc/grpc": "^v1.27",
+        "google/protobuf": "^v3.11"
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload":{
+      "psr-4":{
+        "GPBMetadata\\":"src/xiaoyingdeng/GPBMetadata/",
+        "User\\":"src/xiaoyingdeng/User/"
+      }
+    }
+}
