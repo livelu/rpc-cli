@@ -8,9 +8,7 @@
         }
     ],
     "require": {
-        "xiaoyingdeng/rpccli": "dev-master",
-        "grpc/grpc": "^v1.27",
-        "google/protobuf": "^v3.11"
+        "xiaoyingdeng/rpccli": "dev-master"
     },
     "license": "MIT",
     "minimum-stability": "dev",
