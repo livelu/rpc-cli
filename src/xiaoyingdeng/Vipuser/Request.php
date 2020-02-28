@@ -41,6 +41,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string sort = 7;</code>
      */
     private $sort = '';
+    /**
+     * Generated from protobuf field <code>string from_buyer_mobile = 8;</code>
+     */
+    private $from_buyer_mobile = '';
 
     /**
      * Constructor.
@@ -55,6 +59,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int|string $create_at
      *     @type int $level
      *     @type string $sort
+     *     @type string $from_buyer_mobile
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +217,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->sort = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string from_buyer_mobile = 8;</code>
+     * @return string
+     */
+    public function getFromBuyerMobile()
+    {
+        return $this->from_buyer_mobile;
+    }
+
+    /**
+     * Generated from protobuf field <code>string from_buyer_mobile = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setFromBuyerMobile($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->from_buyer_mobile = $var;
 
         return $this;
     }

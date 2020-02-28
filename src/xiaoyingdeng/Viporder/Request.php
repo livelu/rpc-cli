@@ -37,6 +37,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int32 page_size = 6;</code>
      */
     private $page_size = 0;
+    /**
+     * Generated from protobuf field <code>string phone = 7;</code>
+     */
+    private $phone = '';
 
     /**
      * Constructor.
@@ -50,6 +54,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $isok
      *     @type int $page
      *     @type int $page_size
+     *     @type string $phone
      * }
      */
     public function __construct($data = NULL) {
@@ -185,6 +190,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt32($var);
         $this->page_size = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string phone = 7;</code>
+     * @return string
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    /**
+     * Generated from protobuf field <code>string phone = 7;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setPhone($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->phone = $var;
 
         return $this;
     }
