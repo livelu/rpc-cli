@@ -25,6 +25,10 @@ class Response extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string data = 3;</code>
      */
     private $data = '';
+    /**
+     * Generated from protobuf field <code>string token = 4;</code>
+     */
+    private $token = '';
 
     /**
      * Constructor.
@@ -35,6 +39,7 @@ class Response extends \Google\Protobuf\Internal\Message
      *     @type int $code
      *     @type string $msg
      *     @type string $data
+     *     @type string $token
      * }
      */
     public function __construct($data = NULL) {
@@ -104,6 +109,28 @@ class Response extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->data = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string token = 4;</code>
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
+    /**
+     * Generated from protobuf field <code>string token = 4;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setToken($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->token = $var;
 
         return $this;
     }
