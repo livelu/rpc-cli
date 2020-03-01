@@ -21,7 +21,8 @@
         "Promocode\\":"src/xiaoyingdeng/Promocode/",
         "Salesman\\":"src/xiaoyingdeng/Salesman/",
         "Vipuser\\":"src/xiaoyingdeng/Vipuser/",
-        "Viporder\\":"src/xiaoyingdeng/Viporder/"
+        "Viporder\\":"src/xiaoyingdeng/Viporder/",
+        "Auth\\":"src/xiaoyingdeng/Auth/"
       }
     }
 }
