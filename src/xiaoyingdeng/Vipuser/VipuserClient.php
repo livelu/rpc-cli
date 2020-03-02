@@ -42,4 +42,17 @@ class VipuserClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Vipuser\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UserHome(\Vipuser\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/vipuser.Vipuser/UserHome',
+        $argument,
+        ['\Vipuser\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
