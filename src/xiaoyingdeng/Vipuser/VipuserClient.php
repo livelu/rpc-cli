@@ -55,4 +55,30 @@ class VipuserClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Vipuser\RequestBrankCard $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function BindBankCard(\Vipuser\RequestBrankCard $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/vipuser.Vipuser/BindBankCard',
+        $argument,
+        ['\Vipuser\Response', 'decode'],
+        $metadata, $options);
+    }
+
+    /**
+     * @param \Vipuser\RequestBrankCard $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function UserBankCard(\Vipuser\RequestBrankCard $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/vipuser.Vipuser/UserBankCard',
+        $argument,
+        ['\Vipuser\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
