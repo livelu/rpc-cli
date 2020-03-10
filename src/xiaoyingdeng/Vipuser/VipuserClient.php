@@ -81,4 +81,17 @@ class VipuserClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Vipuser\RequestTakeNotes $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function TakeNotes(\Vipuser\RequestTakeNotes $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/vipuser.Vipuser/TakeNotes',
+        $argument,
+        ['\Vipuser\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
