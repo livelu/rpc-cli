@@ -38,17 +38,9 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
      */
     private $bank_branch = '';
     /**
-     * Generated from protobuf field <code>int64 province_id = 7;</code>
+     * Generated from protobuf field <code>string bank = 7;</code>
      */
-    private $province_id = 0;
-    /**
-     * Generated from protobuf field <code>int64 city_id = 8;</code>
-     */
-    private $city_id = 0;
-    /**
-     * Generated from protobuf field <code>int64 district_id = 9;</code>
-     */
-    private $district_id = 0;
+    private $bank = '';
 
     /**
      * Constructor.
@@ -62,9 +54,7 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
      *     @type string $bank_card
      *     @type string $account_area
      *     @type string $bank_branch
-     *     @type int|string $province_id
-     *     @type int|string $city_id
-     *     @type int|string $district_id
+     *     @type string $bank
      * }
      */
     public function __construct($data = NULL) {
@@ -205,67 +195,23 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Generated from protobuf field <code>int64 province_id = 7;</code>
-     * @return int|string
+     * Generated from protobuf field <code>string bank = 7;</code>
+     * @return string
      */
-    public function getProvinceId()
+    public function getBank()
     {
-        return $this->province_id;
+        return $this->bank;
     }
 
     /**
-     * Generated from protobuf field <code>int64 province_id = 7;</code>
-     * @param int|string $var
+     * Generated from protobuf field <code>string bank = 7;</code>
+     * @param string $var
      * @return $this
      */
-    public function setProvinceId($var)
+    public function setBank($var)
     {
-        GPBUtil::checkInt64($var);
-        $this->province_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 city_id = 8;</code>
-     * @return int|string
-     */
-    public function getCityId()
-    {
-        return $this->city_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 city_id = 8;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setCityId($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->city_id = $var;
-
-        return $this;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 district_id = 9;</code>
-     * @return int|string
-     */
-    public function getDistrictId()
-    {
-        return $this->district_id;
-    }
-
-    /**
-     * Generated from protobuf field <code>int64 district_id = 9;</code>
-     * @param int|string $var
-     * @return $this
-     */
-    public function setDistrictId($var)
-    {
-        GPBUtil::checkInt64($var);
-        $this->district_id = $var;
+        GPBUtil::checkString($var, True);
+        $this->bank = $var;
 
         return $this;
     }
