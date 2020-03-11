@@ -94,4 +94,17 @@ class VipuserClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Vipuser\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function DyCode(\Vipuser\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/vipuser.Vipuser/DyCode',
+        $argument,
+        ['\Vipuser\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
