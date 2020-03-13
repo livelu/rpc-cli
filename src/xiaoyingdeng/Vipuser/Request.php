@@ -45,6 +45,14 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string from_buyer_mobile = 8;</code>
      */
     private $from_buyer_mobile = '';
+    /**
+     * Generated from protobuf field <code>int64 starttime = 9;</code>
+     */
+    private $starttime = 0;
+    /**
+     * Generated from protobuf field <code>int64 endtime = 10;</code>
+     */
+    private $endtime = 0;
 
     /**
      * Constructor.
@@ -60,6 +68,8 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $level
      *     @type string $sort
      *     @type string $from_buyer_mobile
+     *     @type int|string $starttime
+     *     @type int|string $endtime
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +249,50 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->from_buyer_mobile = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 starttime = 9;</code>
+     * @return int|string
+     */
+    public function getStarttime()
+    {
+        return $this->starttime;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 starttime = 9;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setStarttime($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->starttime = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 endtime = 10;</code>
+     * @return int|string
+     */
+    public function getEndtime()
+    {
+        return $this->endtime;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 endtime = 10;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setEndtime($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->endtime = $var;
 
         return $this;
     }
