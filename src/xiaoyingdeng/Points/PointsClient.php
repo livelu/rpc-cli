@@ -55,4 +55,17 @@ class PointsClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Points\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function GetPoints(\Points\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/points.Points/GetPoints',
+        $argument,
+        ['\Points\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
