@@ -53,6 +53,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 endtime = 10;</code>
      */
     private $endtime = 0;
+    /**
+     * Generated from protobuf field <code>int64 userid = 11;</code>
+     */
+    private $userid = 0;
 
     /**
      * Constructor.
@@ -70,6 +74,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type string $from_buyer_mobile
      *     @type int|string $starttime
      *     @type int|string $endtime
+     *     @type int|string $userid
      * }
      */
     public function __construct($data = NULL) {
@@ -293,6 +298,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->endtime = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 userid = 11;</code>
+     * @return int|string
+     */
+    public function getUserid()
+    {
+        return $this->userid;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 userid = 11;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setUserid($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->userid = $var;
 
         return $this;
     }
