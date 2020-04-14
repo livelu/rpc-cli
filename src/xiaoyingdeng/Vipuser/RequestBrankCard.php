@@ -41,6 +41,14 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string bank = 7;</code>
      */
     private $bank = '';
+    /**
+     * Generated from protobuf field <code>string mobile = 8;</code>
+     */
+    private $mobile = '';
+    /**
+     * Generated from protobuf field <code>string weixin = 9;</code>
+     */
+    private $weixin = '';
 
     /**
      * Constructor.
@@ -55,6 +63,8 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
      *     @type string $account_area
      *     @type string $bank_branch
      *     @type string $bank
+     *     @type string $mobile
+     *     @type string $weixin
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +222,50 @@ class RequestBrankCard extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->bank = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mobile = 8;</code>
+     * @return string
+     */
+    public function getMobile()
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * Generated from protobuf field <code>string mobile = 8;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setMobile($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->mobile = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string weixin = 9;</code>
+     * @return string
+     */
+    public function getWeixin()
+    {
+        return $this->weixin;
+    }
+
+    /**
+     * Generated from protobuf field <code>string weixin = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setWeixin($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->weixin = $var;
 
         return $this;
     }
