@@ -41,6 +41,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>string phone = 7;</code>
      */
     private $phone = '';
+    /**
+     * Generated from protobuf field <code>int64 orderid = 8;</code>
+     */
+    private $orderid = 0;
 
     /**
      * Constructor.
@@ -55,6 +59,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $page
      *     @type int $page_size
      *     @type string $phone
+     *     @type int|string $orderid
      * }
      */
     public function __construct($data = NULL) {
@@ -212,6 +217,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkString($var, True);
         $this->phone = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 orderid = 8;</code>
+     * @return int|string
+     */
+    public function getOrderid()
+    {
+        return $this->orderid;
+    }
+
+    /**
+     * Generated from protobuf field <code>int64 orderid = 8;</code>
+     * @param int|string $var
+     * @return $this
+     */
+    public function setOrderid($var)
+    {
+        GPBUtil::checkInt64($var);
+        $this->orderid = $var;
 
         return $this;
     }

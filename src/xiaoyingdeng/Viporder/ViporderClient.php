@@ -29,4 +29,17 @@ class ViporderClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \Viporder\Request $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function OrderDetail(\Viporder\Request $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/viporder.Viporder/OrderDetail',
+        $argument,
+        ['\Viporder\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
