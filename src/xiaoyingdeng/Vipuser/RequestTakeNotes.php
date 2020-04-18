@@ -29,6 +29,14 @@ class RequestTakeNotes extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 bankcard_id = 4;</code>
      */
     private $bankcard_id = 0;
+    /**
+     * Generated from protobuf field <code>int32 page = 5;</code>
+     */
+    private $page = 0;
+    /**
+     * Generated from protobuf field <code>int32 page_size = 6;</code>
+     */
+    private $page_size = 0;
 
     /**
      * Constructor.
@@ -40,6 +48,8 @@ class RequestTakeNotes extends \Google\Protobuf\Internal\Message
      *     @type float $money
      *     @type string $remarks
      *     @type int|string $bankcard_id
+     *     @type int $page
+     *     @type int $page_size
      * }
      */
     public function __construct($data = NULL) {
@@ -131,6 +141,50 @@ class RequestTakeNotes extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->bankcard_id = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page = 5;</code>
+     * @return int
+     */
+    public function getPage()
+    {
+        return $this->page;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page = 5;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPage($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->page = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page_size = 6;</code>
+     * @return int
+     */
+    public function getPageSize()
+    {
+        return $this->page_size;
+    }
+
+    /**
+     * Generated from protobuf field <code>int32 page_size = 6;</code>
+     * @param int $var
+     * @return $this
+     */
+    public function setPageSize($var)
+    {
+        GPBUtil::checkInt32($var);
+        $this->page_size = $var;
 
         return $this;
     }
