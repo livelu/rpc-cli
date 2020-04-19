@@ -57,6 +57,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 userid = 11;</code>
      */
     private $userid = 0;
+    /**
+     * Generated from protobuf field <code>string openid = 12;</code>
+     */
+    private $openid = '';
 
     /**
      * Constructor.
@@ -75,6 +79,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int|string $starttime
      *     @type int|string $endtime
      *     @type int|string $userid
+     *     @type string $openid
      * }
      */
     public function __construct($data = NULL) {
@@ -320,6 +325,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->userid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string openid = 12;</code>
+     * @return string
+     */
+    public function getOpenid()
+    {
+        return $this->openid;
+    }
+
+    /**
+     * Generated from protobuf field <code>string openid = 12;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setOpenid($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->openid = $var;
 
         return $this;
     }
