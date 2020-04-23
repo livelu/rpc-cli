@@ -45,6 +45,10 @@ class Request extends \Google\Protobuf\Internal\Message
      * Generated from protobuf field <code>int64 orderid = 8;</code>
      */
     private $orderid = 0;
+    /**
+     * Generated from protobuf field <code>string goosname = 9;</code>
+     */
+    private $goosname = '';
 
     /**
      * Constructor.
@@ -60,6 +64,7 @@ class Request extends \Google\Protobuf\Internal\Message
      *     @type int $page_size
      *     @type string $phone
      *     @type int|string $orderid
+     *     @type string $goosname
      * }
      */
     public function __construct($data = NULL) {
@@ -239,6 +244,28 @@ class Request extends \Google\Protobuf\Internal\Message
     {
         GPBUtil::checkInt64($var);
         $this->orderid = $var;
+
+        return $this;
+    }
+
+    /**
+     * Generated from protobuf field <code>string goosname = 9;</code>
+     * @return string
+     */
+    public function getGoosname()
+    {
+        return $this->goosname;
+    }
+
+    /**
+     * Generated from protobuf field <code>string goosname = 9;</code>
+     * @param string $var
+     * @return $this
+     */
+    public function setGoosname($var)
+    {
+        GPBUtil::checkString($var, True);
+        $this->goosname = $var;
 
         return $this;
     }
